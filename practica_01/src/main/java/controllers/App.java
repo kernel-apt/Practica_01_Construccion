@@ -19,6 +19,17 @@ public class App extends Application
         stage.show();
     }
 
+
+    /**
+     * Cambia la escena actual por la escena especificada en fxml.
+     * El titulo de la ventana cambia al especificado en title.
+     * El tamaño de la ventana cambia al especificado en height y width.
+     * @throws IOException
+     * @param fxml
+     * @param title
+     * @param height
+     * @param width
+     */
     public static void setRoot(String fxml, String title, Double height, Double width) throws IOException 
     {
         ((Stage) scene.getWindow()).setTitle(title);
@@ -27,11 +38,27 @@ public class App extends Application
         scene.setRoot(loadFXML(fxml));
     }
     
+    /**
+     * Cambia la escena actual por la escena especificada en fxml.
+     * El titulo de la ventana no cambia.
+     * El tamaño de la ventana no cambia.
+     * @throws IOException
+     * @param fxml
+     * @param title
+     */
     public static void setRoot(String fxml, String title) throws IOException 
     {
         scene.setRoot(loadFXML(fxml));
     }    
     
+    /**
+     * Cambia la escena actual por la escena especificada en fxml.
+     * El titulo de la ventana no cambia.
+     * El tamaño de la ventana no cambia.
+     * @throws IOException
+     * @param fxml
+     * @param title
+     */
     public static void setRoot(String fxml) throws IOException 
     {
         scene.setRoot(loadFXML(fxml));
