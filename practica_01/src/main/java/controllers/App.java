@@ -7,6 +7,15 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
 
+/**
+ * Clase principal de la aplicación que maneja la ventana y las escenas.
+ * Contiene variables globales para el usuario y la clave de acceso.
+ * Practica 01 - Login Construccion y Evolucion de Software
+ * @author Manuel Cruz
+ * @since 2025-09-28
+ * @version 1.0
+ */
+
 public class App extends Application 
 {
     private static Scene scene;
@@ -26,7 +35,6 @@ public class App extends Application
         stage.setScene(scene);
         stage.show();
     }
-
 
     /**
      * Cambia la escena actual por la escena especificada en fxml.
