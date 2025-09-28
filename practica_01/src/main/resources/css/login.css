@@ -1,0 +1,23 @@
+.pane-class
+{
+     -fx-font-family: "Comic Sans MS";
+     -fx-background-color: black;
+     -fx-alignment: center;
+     -fx-font-size: 26px;
+}
+
+.textbox-class
+{
+     -fx-font-family: "Comic Sans MS";
+     -fx-background-color: lightgrey;
+     -fx-alignment: center;
+     -fx-font-size: 21px;
+}
+
+.button-class
+{
+     -fx-background-color: blue;
+     -fx-alignment: center;
+     -fx-stroke: white;
+     -fx-font-size: 21px;
+}

@@ -11,6 +11,10 @@ public class App extends Application
 {
     private static Scene scene;
 
+    // Variables globales para almacenar el usuario y la clave de acceso
+    public static String passkey = "1234";
+    public static String user = "admin";
+
     @Override
     public void start(Stage stage) throws IOException 
     {
