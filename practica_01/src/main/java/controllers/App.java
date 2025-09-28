@@ -12,13 +12,17 @@ public class App extends Application
     private static Scene scene;
 
     // Variables globales para almacenar el usuario y la clave de acceso
-    public static String passkey = "1234";
-    public static String user = "admin";
+    public final static String email = "admin@app.com";
+    public final static String passkey = "1234";
+    public final static String user = "admin";
 
     @Override
     public void start(Stage stage) throws IOException 
     {
         scene = new Scene(loadFXML("login"), 640, 480);
+        stage.setTitle("Login");
+        stage.setResizable(false);
+        stage.centerOnScreen();
         stage.setScene(scene);
         stage.show();
     }

@@ -9,6 +9,14 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>gluon-nexus</id>
+            <url>https://nexus.gluonhq.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </repositories>
+    
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -24,6 +32,11 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>25-ea+21</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gluonhq</groupId>
+            <artifactId>charm-glisten</artifactId>
+            <version>6.2.0</version>
         </dependency>
     </dependencies>
     <build>
@@ -42,8 +55,6 @@
                 <version>0.0.6</version>
                 <executions>
                     <execution>
-                        <!-- Default configuration for running -->
-                        <!-- Usage: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>controllers.App</mainClass>
