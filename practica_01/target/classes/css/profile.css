@@ -1,0 +1,17 @@
+#pane
+{
+     -fx-background-color: rgb(110, 207, 207);
+     -fx-font-family: 'Comic Sans MS';
+     -fx-pref-height: 500px;
+     -fx-pref-width: 450px;
+     -fx-font-size: 25px;
+}
+
+.label-class
+{
+     -fx-background-color: aqua;
+     -fx-border-color: black;
+     -fx-border-radius: 15px;
+     -fx-pref-width: 410px;
+     -fx-border-width: 3px;
+}

@@ -7,6 +7,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+/**
+ * maneja logica de la vista login
+ */
 public class LogInController 
 {
      @FXML 
@@ -24,6 +27,11 @@ public class LogInController
      @FXML 
      private Button btnLogin;
 
+     /**
+      * realiza el inicio de sesion y realiza
+      * validaciones de los campos vacios
+      * @throws IOException
+      */
     @FXML
     public void GetIn()
     {
@@ -46,7 +54,7 @@ public class LogInController
           {
                try 
                {
-                    App.setRoot("home", "Bienvenido " + App.user + "!", 950.0, 1150.0);
+                    App.setRoot("home", "Bienvenido " + App.user + "!", 995.0, 1150.0);
                } 
                catch (IOException e) 
                {

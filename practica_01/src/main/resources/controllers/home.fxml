@@ -21,5 +21,6 @@
         </columns>
       </TableView>
       <Button fx:id="btnGoToProfile" layoutX="3.0" layoutY="257.0" mnemonicParsing="false" onAction="#GoToProfile" styleClass="button-class" text="Perfil" />
+      <Button fx:id="btnLogOut" layoutX="3.0" layoutY="890.0" mnemonicParsing="false" onAction="#LogOut" styleClass="button-class" text="Cerrar Sesion" />
    </children>
 </Pane>

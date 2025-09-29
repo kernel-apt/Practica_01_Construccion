@@ -12,6 +12,10 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import models.Item;
 
+/**
+ * controlador de la vista home
+ * maneja logica de la vista home
+ */
 public class HomeController implements Initializable 
 {
     @FXML private TableView<Item> tableViewItems;
@@ -22,12 +26,28 @@ public class HomeController implements Initializable
 
     public static ObservableList<Item> observableList;
 
+    /**
+     * inicializa los datos de la tabla
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) 
     {
-        colItemName.setCellValueFactory(new PropertyValueFactory<String, Item>("item"));
-        colPrice.setCellValueFactory(new PropertyValueFactory<Double, Item>("price"));
-        colQuantity.setCellValueFactory(new PropertyValueFactory<Integer, Item>("quantity"));
+        colItemName.setCellValueFactory
+        (
+            new PropertyValueFactory<String, Item>("item")
+        );
+        
+        colPrice.setCellValueFactory
+        (
+            new PropertyValueFactory<Double, Item>("price")
+        );
+        
+        colQuantity.setCellValueFactory
+        (
+            new PropertyValueFactory<Integer, Item>("quantity")
+        );
 
         observableList = FXCollections.observableArrayList();
         
@@ -49,6 +69,12 @@ public class HomeController implements Initializable
     @FXML
     public void GoToProfile() throws IOException
     {
-        App.setRoot("profile", "Perfil de " + App.user, 951.0, 1150.0);
+        App.setRoot("profile", "Perfil de " + App.user, 500.0, 450.0);
+    }
+    
+    @FXML
+    public void LogOut() throws IOException
+    {
+        App.setRoot("login", "Bienvenido!", 480.0, 526.0);
     }
 }

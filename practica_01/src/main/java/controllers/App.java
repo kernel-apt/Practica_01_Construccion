@@ -21,6 +21,7 @@ public class App extends Application
     private static Scene scene;
 
     // Variables globales para almacenar el usuario y la clave de acceso
+    public final static String userName = "Administrador del Sistema";
     public final static String email = "admin@app.com";
     public final static String passkey = "1234";
     public final static String user = "admin";

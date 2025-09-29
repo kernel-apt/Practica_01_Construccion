@@ -27,6 +27,7 @@
      -fx-border-color: rgb(114, 15, 228);
      -fx-font-family: 'Comic Sans MS';
      -fx-background-color: black;
+     -fx-text-fill: rgb(180, 116, 240);
      -fx-border-radius: 15px;
      -fx-border-width: 5px;
      -fx-pref-width: 245px;
