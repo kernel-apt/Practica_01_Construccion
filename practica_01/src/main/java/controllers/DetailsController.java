@@ -10,5 +10,5 @@ import javafx.fxml.FXML;
  */
 public class DetailsController 
 {
-     @FXML private Label lbl
+     @FXML private Label lbl;
 }
