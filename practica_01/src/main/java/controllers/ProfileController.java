@@ -30,6 +30,6 @@ public class ProfileController implements Initializable
      @FXML
      public void GoHome() throws Exception
      {
-          App.setRoot("home", "Bienvenido " + App.user, 950.0, 1150.0);
+          App.setRoot("home", "Bienvenido " + App.user, 995.0, 1150.0);
      }
 }
