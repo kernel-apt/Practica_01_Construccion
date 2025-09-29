@@ -28,7 +28,7 @@ public class App extends Application
     @Override
     public void start(Stage stage) throws IOException 
     {
-        scene = new Scene(loadFXML("login"), 640, 480);
+        scene = new Scene(loadFXML("login"), 526, 480);
         stage.setTitle("Login");
         stage.setResizable(false);
         stage.centerOnScreen();
@@ -49,6 +49,7 @@ public class App extends Application
     public static void setRoot(String fxml, String title, Double height, Double width) throws IOException 
     {
         ((Stage) scene.getWindow()).setTitle(title);
+        scene.getWindow().centerOnScreen();
         scene.getWindow().setHeight(height);
         scene.getWindow().setWidth(width);
         scene.setRoot(loadFXML(fxml));
@@ -64,6 +65,8 @@ public class App extends Application
      */
     public static void setRoot(String fxml, String title) throws IOException 
     {
+        ((Stage) scene.getWindow()).setTitle(title);
+        scene.getWindow().centerOnScreen();
         scene.setRoot(loadFXML(fxml));
     }    
     
@@ -77,6 +80,7 @@ public class App extends Application
      */
     public static void setRoot(String fxml) throws IOException 
     {
+        scene.getWindow().centerOnScreen();
         scene.setRoot(loadFXML(fxml));
     }
 

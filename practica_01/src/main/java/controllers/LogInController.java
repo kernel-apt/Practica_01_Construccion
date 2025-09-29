@@ -44,14 +44,14 @@ public class LogInController
           
           if(txtUser.getText().equals(App.user) && txtPasskey.getText().equals(App.passkey))
           {
-          try 
-          {
-                    App.setRoot("home", "Bienvenido " + App.user + "!", 800.0, 600.0);
-          } 
-          catch (IOException e) 
-          {
+               try 
+               {
+                    App.setRoot("home", "Bienvenido " + App.user + "!", 950.0, 1150.0);
+               } 
+               catch (IOException e) 
+               {
                     e.printStackTrace();
-          }
+               }
           }
     }
 }

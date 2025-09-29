@@ -1,0 +1,34 @@
+.pane-class
+{
+     -fx-font-family: 'Comic Sans MS';
+     -fx-background-color: black;
+     -fx-pref-width: 1150px;
+     -fx-font-size: 25px;
+}
+
+.column-class
+{
+     -fx-text-alignment: center;
+     -fx-pref-width: 300px;
+     -fx-alignment: center;
+}
+
+.table-class
+{
+     -fx-font-family: 'Comic Sans MS';
+     -fx-background-color: yellow;
+     -fx-pref-height: 950;
+     -fx-pref-width: 900;
+     -fx-font-size: 20px;
+}
+
+.button-class
+{
+     -fx-border-color: rgb(114, 15, 228);
+     -fx-font-family: 'Comic Sans MS';
+     -fx-background-color: black;
+     -fx-border-radius: 15px;
+     -fx-border-width: 5px;
+     -fx-pref-width: 245px;
+     -fx-font-size: 20px;
+}
