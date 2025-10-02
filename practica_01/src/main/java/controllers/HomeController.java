@@ -18,13 +18,14 @@ import models.Item;
  */
 public class HomeController implements Initializable 
 {
-    @FXML private TableView<Item> tableViewItems;
+    @FXML public TableView<Item> tableViewItems;
 
     @FXML private TableColumn<String, Item> colItemName;
     @FXML private TableColumn<Double, Item> colPrice;
     @FXML private TableColumn<Integer, Item> colQuantity;
 
     public static ObservableList<Item> observableList;
+    public static int position;
 
     /**
      * inicializa los datos de la tabla
@@ -63,6 +64,21 @@ public class HomeController implements Initializable
             new Item("Manzana", 0.5, 10),
             new Item("Pera", 0.8, 5),
             new Item("Plátano", 0.3, 20)
+        );
+
+        tableViewItems.setOnMousePressed
+        (
+            e ->
+            {
+                try 
+                {
+                    App.setRoot("details", "Detalles del Item", 850.0, 650.0);
+                } 
+                catch (IOException e1) 
+                {
+                    e1.printStackTrace();
+                }      
+            }
         );
     }
 

@@ -52,6 +52,6 @@ public class Item
 
      public String toString() 
      {
-          return "Item [item=" + item + ", price=" + price + ", quantity=" + quantity + "]";
+          return "Item [item=" + item.getValue() + ", price=" + price.getValue() + ", quantity=" + quantity.getValue() + "]";
      }
 }
