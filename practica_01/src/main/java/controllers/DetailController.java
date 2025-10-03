@@ -36,10 +36,13 @@ public class DetailController implements Initializable
                ).toExternalForm()
           );
 
-          imageViewFruit.setPreserveRatio(true);
-          imageViewFruit.setFitWidth(imageViewFruit.getFitWidth());
-          imageViewFruit.setFitHeight(imageViewFruit.getFitHeight());
           imageViewFruit.setImage(image);
+
+          lblItemName.setText(item.getItem());
+          lblPieces.setText(String.valueOf(item.getQuantity()));
+          lblPrice.setText(String.valueOf(item.getPrice()));
+          
+          lblTotal.setText(String.valueOf(item.getPrice() * item.getQuantity()));
      }
 
      public void GetBack() throws Exception
