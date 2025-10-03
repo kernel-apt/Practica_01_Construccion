@@ -32,7 +32,7 @@ public class DetailController implements Initializable
           (
                getClass().getResource
                (
-                    "/icon/" + item.getItem().toLowerCase()  + ".png"
+                    "/icon/" + item.getItem().toLowerCase().trim()  + ".png"
                ).toExternalForm()
           );
 
