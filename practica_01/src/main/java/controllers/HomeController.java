@@ -63,7 +63,7 @@ public class HomeController implements Initializable
         (
             new Item("Manzana", 0.5, 10),
             new Item("Pera", 0.8, 5),
-            new Item("Plátano", 0.3, 20)
+            new Item("Platano", 0.3, 20)
         );
 
         tableViewItems.setOnMousePressed
@@ -72,7 +72,7 @@ public class HomeController implements Initializable
             {
                 try 
                 {
-                    App.setRoot("details", "Detalles del Item", 850.0, 650.0);
+                    App.setRoot("details", "Detalles del Item", 600.0, 590.0);
                 } 
                 catch (IOException e1) 
                 {

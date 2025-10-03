@@ -1,7 +1,24 @@
 .pane-class
 {
-     -fx-background-color: rgb(175, 91, 245);
      -fx-font-family: 'Comic Sans MS';
-     -fx-border-radius: 15px ;
-     -fx-font-family: 23px;
+     -fx-background-color: black;
+     -fx-pref-height: 573px;
+     -fx-pref-width: 590px;
+}
+
+.label-class
+{
+     -fx-border-color: rgb(157, 98, 252);
+     -fx-text-fill: rgb(142, 81, 240);
+     -fx-border-radius: 15px;
+     -fx-font-size: 22px;
+}
+
+.button-class
+{
+     -fx-border-color: rgb(157, 98, 252);
+     -fx-text-fill: rgb(142, 81, 240);
+     -fx-background-color: black;
+     -fx-border-radius: 15px;
+     -fx-font-size: 20px;
 }

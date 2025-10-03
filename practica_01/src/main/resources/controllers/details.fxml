@@ -2,11 +2,16 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="809.0" styleClass="pane-class" stylesheets="@../css/details.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DetailController">
+<Pane fx:id="pane" styleClass="pane-class" stylesheets="@../css/details.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DetailController">
    <children>
-      <Label fx:id="lblTexto" layoutY="69.0" prefHeight="71.0" prefWidth="809.0" text="Datos&gt; " />
-      <Button fx:id="btnGetBack" layoutX="363.0" layoutY="329.0" mnemonicParsing="false" onAction="#GetBack" text="Regresar" />
+      <Label id="label-class" fx:id="lblItemName" layoutX="12.0" layoutY="387.0" prefHeight="34.0" prefWidth="269.0" styleClass="label-class" text="  Item: " />
+      <Button fx:id="btnGetBack" layoutX="244.0" layoutY="512.0" mnemonicParsing="false" onAction="#GetBack" styleClass="button-class" text="Regresar" />
+      <Label id="label-class" fx:id="lblPieces" layoutX="295.0" layoutY="387.0" prefHeight="34.0" prefWidth="285.0" styleClass="label-class" text="  Piezas: " />
+      <Label id="label-class" fx:id="lblPrice" layoutX="12.0" layoutY="440.0" prefHeight="34.0" prefWidth="269.0" styleClass="label-class" text="  Precio: " />
+      <Label id="label-class" fx:id="lblTotal" layoutX="296.0" layoutY="440.0" prefHeight="34.0" prefWidth="285.0" styleClass="label-class" text="  Total a pagar: " />
+      <ImageView fx:id="imageViewFruit" fitHeight="363.0" fitWidth="578.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </Pane>
