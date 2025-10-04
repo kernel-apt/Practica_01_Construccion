@@ -26,6 +26,7 @@ public class DetailController implements Initializable
      public void initialize(URL location, ResourceBundle resources) 
      {
           int position = HomeController.position;
+          System.out.println("Posicion seleccionada: " + position + "\n");
           Item item = HomeController.observableList.get(position);
 
           image = new Image
@@ -38,11 +39,10 @@ public class DetailController implements Initializable
 
           imageViewFruit.setImage(image);
 
-          lblItemName.setText(item.getItem());
-          lblPieces.setText(String.valueOf(item.getQuantity()));
-          lblPrice.setText(String.valueOf(item.getPrice()));
-          
-          lblTotal.setText(String.valueOf(item.getPrice() * item.getQuantity()));
+          lblItemName.setText(lblItemName.getText() + " " + item.getItem());
+          lblPieces.setText(String.valueOf(lblPieces.getText() + " " + item.getQuantity()));
+          lblPrice.setText(String.valueOf(lblPrice.getText() + " " + item.getPrice()));
+          lblTotal.setText(String.valueOf(lblTotal.getText() + " " + item.getPrice() * item.getQuantity()));
      }
 
      public void GetBack() throws Exception

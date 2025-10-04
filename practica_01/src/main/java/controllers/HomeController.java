@@ -7,6 +7,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -59,6 +60,8 @@ public class HomeController implements Initializable
             TableView.CONSTRAINED_RESIZE_POLICY_FLEX_LAST_COLUMN
         );
 
+        tableViewItems.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+
         observableList.addAll
         (
             new Item("Manzana", 0.5, 10),
@@ -66,18 +69,20 @@ public class HomeController implements Initializable
             new Item("Platano", 0.3, 20)
         );
 
-        tableViewItems.setOnMousePressed
+        tableViewItems.getSelectionModel().selectedItemProperty().addListener
         (
-            e ->
+            (observable, oldValue, newValue) ->
             {
                 try 
                 {
+                    position = observableList.indexOf(newValue);
+                    System.out.println("Posicion seleccionada: " + position + "\n");
                     App.setRoot("details", "Detalles del Item", 600.0, 590.0);
                 } 
                 catch (IOException e1) 
                 {
                     e1.printStackTrace();
-                }      
+                }
             }
         );
     }
